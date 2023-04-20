@@ -4,8 +4,60 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bfe12996eeecb6fdc8713a9fd9d431f8",
+    "content-hash": "5c82f86ba62232d4993bac09b84e07bd",
     "packages": [
+        {
+            "name": "aidanscode/carnival",
+            "version": "v0.1.1-alpha",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aidanscode/carnival.git",
+                "reference": "c15634c712d05837d4b8464367a584ff77b24b9b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aidanscode/carnival/zipball/c15634c712d05837d4b8464367a584ff77b24b9b",
+                "reference": "c15634c712d05837d4b8464367a584ff77b24b9b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/collections": "^10.0",
+                "illuminate/database": "^10.0",
+                "illuminate/support": "^10.0",
+                "nesbot/carbon": "^2.62.1",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5.1",
+                "phpunit/phpunit": "^10.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Carnival\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Aidan",
+                    "email": "amurphey@tutanota.com"
+                },
+                {
+                    "name": "Kyle",
+                    "email": "kyleevangelisto@gmail.com"
+                }
+            ],
+            "description": "Core systems for AKFS",
+            "support": {
+                "issues": "https://github.com/aidanscode/carnival/issues",
+                "source": "https://github.com/aidanscode/carnival/tree/v0.1.1-alpha"
+            },
+            "time": "2023-04-20T01:19:26+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.10.2",
@@ -7806,7 +7858,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "aidanscode/carnival": 15
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
