@@ -12,7 +12,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/install', [App\Http\Controllers\InstallController::class, 'index'])->name('install');
 
-Route::get('/', function () {
-    return view('welcome');
+Route::middleware('installed')->group(function() {
+    Route::get('/', fn() => view('welcome'));
 });
